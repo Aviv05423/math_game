@@ -23,6 +23,7 @@ class game
             input.next();
         }}
 
+
         if (game_level == 1) {
             System.out.println("ok, we go new!");
             while (1 == 1) {
