@@ -13,21 +13,27 @@ class game
         boolean game_level_val = true;
         while(game_level_val) {
         try {
-            game_level = 0;
             game_level = input.nextInt();
             game_level_val = false;
 
         } catch (Exception e) {
             System.out.println("select NUMBER 1, 2 or 3 Please. thank you");
-            game_level_val = true;
             input.next();
         }}
 
 
         if (game_level == 1) {
             System.out.println("ok, we go new!");
-            while (1 == 1) {
-                System.out.println("\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n");
+            for (;;) {
+                System.out.println("""
+
+
+
+
+
+
+
+                        """);
                 System.out.println("To escape this nightmare just write \"Exit\"");
                 System.out.println("scorecard: " + score);
 
@@ -62,7 +68,7 @@ class game
 
             try {
                 String user_Unser = input.nextLine();
-                user_Unser.toLowerCase();
+                user_Unser = user_Unser.toLowerCase();
                 if (Objects.equals(user_Unser, "exit")){
                     System.out.println("good by my old friend");
                     System.exit(0);
@@ -74,7 +80,6 @@ class game
 
             } catch (Exception e) {
                 System.out.println("unser NUMBER Please. thank you \nTo escape this nightmare just write \"Exit\"");
-                game_unser_valid = false;
 
             }}
 
@@ -82,13 +87,6 @@ class game
     }
 
 }
-
-
-
-
-
-
-
 
 
 
