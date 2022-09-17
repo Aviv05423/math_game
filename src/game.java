@@ -1,6 +1,5 @@
 import java.util.*;
-class game
-{
+class game {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -23,8 +22,8 @@ class game
 
 
         if (game_level == 1) {
-            System.out.println("ok, we go new!");
-            for (;;) {
+            System.out.println("ok, we go now!");
+            while (true) {
                 System.out.println("""
 
 
@@ -35,7 +34,7 @@ class game
 
                         """);
                 System.out.println("To escape this nightmare just write \"Exit\"");
-                System.out.println("scorecard: " + score);
+                System.out.println("scoreBoard: " + score);
 
                 int num1 = random.nextInt(100);
                 int num2 = random.nextInt(100);
@@ -45,7 +44,7 @@ class game
 //                int unser = input.nextInt();
                 if (unserNum == (num1 + num2)) {
                     System.out.println("You are equal to God");
-                    System.out.println("i gonna give u 2 points: ");
+                    System.out.println("I gonna give u 2 points! ");
                     score = score + 2;
 
                 } else {
@@ -70,7 +69,7 @@ class game
                 String user_Unser = input.nextLine();
                 user_Unser = user_Unser.toLowerCase();
                 if (Objects.equals(user_Unser, "exit")){
-                    System.out.println("good by my old friend");
+                    System.out.println("goodbye my old friend (:");
                     System.exit(0);
                 }
                 else {
@@ -79,7 +78,7 @@ class game
                 }
 
             } catch (Exception e) {
-                System.out.println("unser NUMBER Please. thank you \nTo escape this nightmare just write \"Exit\"");
+                System.out.println("answer NUMBER Please. thank you \nTo escape this nightmare just write \"Exit\"");
 
             }}
 
